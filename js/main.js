@@ -1,6 +1,6 @@
 var sv = new google.maps.StreetViewService();
-var width = 400;
-var height = 150;
+var width = 500;
+var height = 100;
 var overlap = 30;
 var fullY = height + overlap;
 var panos = new Array();
@@ -18,7 +18,7 @@ function initialize() {
 
   var latStep = -0.002;
   var longStep = 0.002;
-  for(var j = 0; j < 3; j++){
+  for(var j = 0; j < 5; j++){
     for (var i = 0; i < 3; i++){
         createSV(startingLat+j*latStep, startingLong + i*longStep, i*width, j*height);
     }
